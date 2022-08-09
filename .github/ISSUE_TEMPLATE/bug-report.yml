@@ -12,6 +12,30 @@ body:
 
         ✅ If you want to report a feature request or improvement contact the product owner.
 
+  - type: input
+    id: bug-device
+    attributes:
+      label: What device are you using?
+      placeholder: M2 Macbook Air
+    validations:
+      required: true
+           
+  - type: input
+    id: bug-os
+    attributes:
+      label: What operating system are you using?
+      placeholder: macOS
+    validations:
+      required: true
+      
+  - type: input
+    id: bug-browser
+    attributes:
+      label: What browser are you using and what is its version?
+      placeholder: Safari 16
+    validations:
+      required: true
+
   - type: textarea
     id: bug-description
     attributes:
@@ -38,30 +62,6 @@ body:
     attributes:
       label: Expected behavior
       description: A clear and concise description of what you expected to happen.
-    validations:
-      required: true
-
-  - type: input
-    id: bug-device
-    attributes:
-      label: What device are you using?
-      placeholder: M2 Macbook Air
-    validations:
-      required: true
-           
-  - type: input
-    id: bug-os
-    attributes:
-      label: What operating system are you using?
-      placeholder: macOS
-    validations:
-      required: true
-      
-  - type: input
-    id: bug-browser
-    attributes:
-      label: What browser are you using and what is its version?
-      placeholder: Safari 16
     validations:
       required: true
 
