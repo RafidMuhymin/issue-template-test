@@ -63,7 +63,7 @@ body:
     id: bug-browser-version
     attributes:
       label: What version of your browser are you using?
-      placeholder: 16
+      placeholder: "16"
     validations:
       required: true
 
