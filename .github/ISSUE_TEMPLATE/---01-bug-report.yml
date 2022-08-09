@@ -1,6 +1,6 @@
 name: "\U0001F41B Bug Report"
 description: Report an issue or possible bug
-title: "\U0001F41B BUG:"
+title: "\U0001F41B BUG: "
 labels: []
 assignees: []
 body:
@@ -10,8 +10,7 @@ body:
         ##  Quick Checklist
         Thank you for taking the time to file a bug report! Please fill out this form as completely as possible.
 
-        ✅ I am using the **latest version of Astro** and all plugins.
-        ✅ I am using a version of Node that supports ESM (`v14.18.0+`, or `v16.12.0+`)
+        ✅ If you want to report a feature request or improvement contact the product owner.
   - type: input
     id: astro-version
     attributes:
