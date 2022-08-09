@@ -1,3 +1,4 @@
+---
 name: "\U0001F41B Bug Report"
 description: Report an issue or possible bug
 title: "\U0001F41B BUG:"
@@ -56,3 +57,4 @@ body:
       description: Add any other context about the problem here.
     validations:
       required: false
+---
