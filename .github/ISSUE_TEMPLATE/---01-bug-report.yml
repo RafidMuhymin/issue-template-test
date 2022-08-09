@@ -9,49 +9,55 @@ body:
         ##  Quick Checklist
         Thank you for taking the time to file a bug report! Please fill out this form as completely as possible.
 
-        ✅ If you want to report a feature request or improvement contact the product owner.
- - type: textarea
+        ✅ I am using the **latest version of Astro** and all plugins.
+        ✅ I am using a version of Node that supports ESM (`v14.18.0+`, or `v16.12.0+`)
+  - type: input
+    id: astro-version
+    attributes:
+      label: What version of `astro` are you using?
+      placeholder: 0.0.0
+    validations:
+      required: true
+  - type: input
+    id: ssr-adapter
+    attributes:
+      label: Are you using an SSR adapter? If so, which one?
+      placeholder: None, or Netlify, Vercel, Cloudflare, etc.
+    validations:
+      required: true
+  - type: input
+    id: package-manager
+    attributes:
+      label: What package manager are you using?
+      placeholder: npm, yarn, pnpm
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: What operating system are you using?
+      placeholder: Mac, Windows, Linux
+    validations:
+      required: true
+  - type: textarea
     id: bug-description
     attributes:
       label: Describe the Bug
       description: A clear and concise description of what the bug is.
     validations:
       required: true
- - type: textarea
-    id: bug-reproduce
+  - type: input
+    id: bug-reproduction
     attributes:
-      label: To Reproduce
-      description: Steps to reproduce the behavior
+      label: Link to Minimal Reproducible Example
+      description: 'Use [astro.new](https://astro.new) to create a minimal reproduction of the problem. **A minimal reproduction is required** so that others can help debug your issue. If a report is vague (e.g. just a generic error message) and has no reproduction, it may be auto-closed.'
+      placeholder: 'https://stackblitz.com/abcd1234'
     validations:
       required: true
-      placeholder: 1. Go to '...' 2. Click on '....' 3. Scroll down to '....' 4. See error
- - type: textarea
-    id: bug-expected-behavior
+  - type: checkboxes
+    id: will-pr
     attributes:
-      label: Expected behavior
-      description: A clear and concise description of what you expected to happen.
-    validations:
-      required: true
- - type: textarea
-    id: bug-desktop
-    attributes:
-      label: Desktop
-      description: Please complete the following information for desktop
-    validations:
-      required: false
-      placeholder:  - OS: [e.g. iOS] - Browser [e.g. chrome, safari] - Version [e.g. 22]
- - type: textarea
-    id: bug-smartphone
-    attributes:
-      label: Smartphone
-      description: Please complete the following information for smartphone
-    validations:
-      required: false
-      placeholder:   - Device: [e.g. iPhone6] - OS: [e.g. iOS8.1] - Browser [e.g. stock browser, safari] - Version [e.g. 22]
- - type: textarea
-    id: bug-additional-context
-    attributes:
-      label: Additional context
-      description: Add any other context about the problem here.
-    validations:
-      required: false
+      label: Participation
+      options:
+        - label:  I am willing to submit a pull request for this issue.
+          required: false
