@@ -11,7 +11,7 @@ body:
         Thank you for taking the time to file a bug report! Please fill out this form as completely as possible.
 
         ✅ If you want to report a feature request or improvement contact the product owner.
-        
+
   - type: textarea
     id: bug-description
     attributes:
@@ -46,24 +46,22 @@ body:
     attributes:
       label: What device are you using?
       placeholder: M2 Macbook Air
-      
+    validations:
+      required: true
+           
   - type: input
     id: bug-os
     attributes:
       label: What operating system are you using?
       placeholder: macOS
-
+    validations:
+      required: true
+      
   - type: input
     id: bug-browser
     attributes:
-      label: What browser are you using?
-      placeholder: Safari
-
-  - type: input
-    id: bug-browser-version
-    attributes:
-      label: What version of your browser are you using?
-      placeholder: "16"
+      label: What browser are you using and what is its version?
+      placeholder: Safari 16
     validations:
       required: true
 
